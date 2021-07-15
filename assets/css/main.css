@@ -1,6 +1,6 @@
 .header {
     height: 120px;
-    background-image: linear-gradient(0, #fe6433, #f53e2d);
+    background-image: linear-gradient(0,#00DD00,#00AA00);
 }
 
 .header__navbar {
@@ -23,6 +23,10 @@
 .header__navbar-item--has-qr:hover .header__qr{
     display: block;
 }
+
+.header__navbar-item--has-notify:hover .header__notify {
+    display: block;
+} 
 
 .header__navbar-item,
 .header__navbar-item-link {
@@ -87,7 +91,7 @@
     padding: 8px;
     border-radius: 2px;
     display: none;
-    animation: fadeIn ease-in 0.3s;
+    animation: fadeIn ease-in 0.2s;
 }
 
 .header__qr::before {
@@ -129,6 +133,21 @@
     width: 404px;
     border: 1px solid #D3D3D3;
     background-color: var(--white-color);
+    cursor: default;
+    transform-origin: calc(100% - 20px) top;
+    animation: headerNotifyGrowth ease 0.25s;
+    display: none;
+}
+
+@keyframes headerNotifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .header__notify-header {
@@ -142,6 +161,7 @@
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 40px;
+    user-select: none;
 }
 
 .header__notify-list {
@@ -157,7 +177,7 @@
 }
 
 .header__notify-item--viewed {
-    background-color: rgba(238,75,43,0.08);
+    background-color: rgba(21, 228, 48, 0.2);
 }
 
 .header__notify-link {
@@ -179,8 +199,9 @@
 .header__notify-name {
     display: block;
     font-size: 1.4rem;
-    color: var(--black-color);
+    color: var(--text-color);
     font-weight: 400;
+    line-height: 1.8rem;
 }
 
 .header__notify-description {
@@ -188,14 +209,19 @@
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: #756F6e;
+    margin-top: 4px;
 }
 
 .header__notify-footer {
-    text-align: center;
+    display: flex;
 }
 
 .header__notify-footer-btn {
     text-decoration: none;
     color: var(--text-color);
-    padding: 16px 16px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
 }
