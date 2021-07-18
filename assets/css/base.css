@@ -1,7 +1,10 @@
 :root {
+    --primary-color: #00AA00;
+    --primary-color--hover: rgba(21, 228, 48, 0.2);
     --white-color: #fff;
     --black-color: #333;
     --text-color: #000;
+    --boder-color: #dbdbdb;
 }
 
 * {
@@ -63,4 +66,24 @@ html {
     position: relative;
     z-index: 1;
     border-radius: 5px;
+}
+
+.auth-form__controls {
+    margin-top: 80px;
+}
+
+/* Button style */
+.btn {
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: #fff;
 }
