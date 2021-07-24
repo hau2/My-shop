@@ -43,6 +43,15 @@ html {
     }
 }
 
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-form));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
 /* Modal */
 .modal {
     position: fixed;
@@ -51,6 +60,7 @@ html {
     right: 0;
     bottom: 0;
     display: flex;
+    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay {
@@ -61,9 +71,12 @@ html {
 }
 
 .modal__body {
+    --growth-form: 0.7;
+    --growth-to: 1;
     margin: auto;
     position: relative;
     z-index: 1;
+    animation: growth linear 0.1s;
 }
 
 .auth-form__controls {
@@ -103,7 +116,7 @@ html {
 .btn.btn--size-s {
     height: 32px;
     font-size: 12px;
-    padding: 0 8px;
+    padding: 0 20px;
 }
 
 .btn.btn--primary {
