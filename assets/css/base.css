@@ -1,6 +1,7 @@
 :root {
     --primary-color: #00AA00;
     --primary-color--hover: rgba(21, 228, 48, 0.2);
+    --hover-color: #63c063;
     --white-color: #fff;
     --black-color: #333;
     --text-color: #000;
@@ -97,7 +98,7 @@ html {
 
 /* Button style */
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
