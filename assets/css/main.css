@@ -740,7 +740,7 @@
 .header__search-option {
     position: absolute;
     right: 0;
-    top: calc(100% + 3px);
+    top: calc(100% - 1px);
     width: 130px;
     list-style: none;
     box-shadow: 0 1px 2px #e0e0e0;
