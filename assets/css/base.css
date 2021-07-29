@@ -124,10 +124,11 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
+    background-color: #fff;
 }
 
 .btn.btn--nomal:hover {
