@@ -219,7 +219,7 @@
 /* Header notification */
 .header__notify {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 118%;
     right: 0;
     width: 404px;
@@ -283,7 +283,7 @@
     height: 40vh;
     overflow-y: scroll;
     padding-left: 0;
-}
+}A
 
 .header__notify-item {
     display: flex;
