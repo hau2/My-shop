@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -987,11 +988,11 @@
             </div>
         </div>
 
-        <footer class="footer">
+        <footer class="footer" data-aos="fade-right">
             <div class="grid">
                 <div class="grid__row">
                     <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <h3 class="footer__heading" data-aos="fade-up">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
                                 <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
@@ -1005,7 +1006,7 @@
                         </ul>
                     </div>
                     <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <h3 class="footer__heading" data-aos="fade-up">Giới thiệu</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
                                 <a href="" class="footer-item__link">Điện thoại % Laptop</a>
@@ -1019,10 +1020,10 @@
                         </ul>
                     </div>
                     <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Danh mục</h3>
+                        <h3 class="footer__heading" data-aos="fade-up">Danh mục</h3>
                     </div>
                     <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Theo dõi</h3>
+                        <h3 class="footer__heading" data-aos="fade-up">Theo dõi</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
                                 <a href="" class="footer-item__link">
@@ -1045,16 +1046,16 @@
                         </ul>
                     </div>
                     <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <h3 class="footer__heading" data-aos="fade-up">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
-                            <img src="/assets/img/qr_code.png" alt="download_qr" class="footer__download-qr">
+                            <img src="./assets/img/qr_code.png" alt="download_qr" class="footer__download-qr">
                             <div class="footer__download-apps">
                                 <a href="" class="footer__download-apps-link">
-                                    <img src="/assets/img/google_play.png" alt="Google play"
+                                    <img src="./assets/img/google_play.png" alt="Google play"
                                         class="footer__download-app-img">
                                 </a>
                                 <a href="" class="footer__download-apps-link">
-                                    <img src="/assets/img/app_store.png" alt="App store"
+                                    <img src="./assets/img/app_store.png" alt="App store"
                                         class="footer__download-app-img">
                                 </a>
                             </div>
@@ -1074,7 +1075,6 @@
     <!-- Modal layout -->
     <!-- <div class="modal">
         <div class="modal__overlay"></div>
-
         <div class="modal__body"> -->
     <!-- Register form -->
     <!-- <div class="auth-form">
@@ -1098,7 +1098,7 @@
 
                     <div class="auth-form__aside">
                         <p class="auth-form__policy-text">
-                            Bằng việc đăng ký, bạn đã đồng ý với MyShop về
+                            Bằng việc đăng ký, bạn đã đồng ý với Shopee về
                             <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
                             <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
                         </p>
@@ -1178,6 +1178,15 @@
             </div>
         </div>
     </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+
+        AOS.init({
+            delay:100,
+            duration:500
+        })
+    
+    </script>
 </body>
 
 </html>
